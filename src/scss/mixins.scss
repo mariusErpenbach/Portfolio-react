@@ -1,0 +1,24 @@
+//colors
+$Maximum-Purple: #784284;
+$Dark-Slate-Blue: #4D3A81;
+$Cosmic-Cobalt: #2D3585;
+$Cetacean-Blue-one: #010A2D;
+$Cetacean-Blue-two: #0C1640; 
+$Space-Cadet:#1A2653;
+
+// animations 
+@keyframes spin { 100% {transform: rotate(360deg); transform:rotate(360deg); } }
+
+@keyframes pulse {
+    0% {
+      height:5em;
+      width:5em;
+    }
+    50%{
+        height:1em;
+        width:1em;
+    }
+    100% {
+        height:5em;
+        width:5em;
+    }}

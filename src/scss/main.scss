@@ -1,1 +1,7 @@
-@import "page.scss"
+// scss rules
+@import "mixins.scss";
+
+// overall rules
+@import "body.scss";
+@import "page.scss";
+

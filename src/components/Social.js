@@ -1,12 +1,11 @@
 import React from "react";
 
-const Welcome = () => {
+const Social = () => {
     return (
-      <div class="page">
+      <div class="Social">
         
       </div>
     );
   };
   
-export default Welcome;
-  
+export default Social;

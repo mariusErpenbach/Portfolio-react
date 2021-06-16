@@ -1,0 +1,40 @@
+.background-ball-container{
+    position: absolute;
+    display: flex;
+    height: 95vh;
+    width:95vw;
+    overflow:hidden;
+    :first-child {
+        position: relative;
+        top:-20%;
+        animation: spin 60s linear infinite;
+      }
+      :nth-child(2) {
+        animation: spin 58s linear infinite;
+      }
+.background-balls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    flex: 50%;
+    margin: 10%;
+    div{
+      border-radius: 100%;
+      background-color: $Cetacean-Blue-two;
+    }
+    :first-child {
+      animation: pulse 20s linear infinite;
+      position: relative;
+      top: -7em;
+      left: -1em;
+      height: 5em;
+      width: 5em;
+    }
+    :nth-child(2) {
+      animation: pulse 25s linear infinite;
+      height: 8em;
+      width: 8em;
+    }
+  }
+}

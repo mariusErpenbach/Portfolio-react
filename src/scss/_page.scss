@@ -1,41 +1,11 @@
-
-.page{
-    
-    position:absolute;
-    left:5em;
-    display:flex;
-    height:90vh;
-    width:85vw;
-    margin:1%;
-    border-style:dotted;
-    border-color:peru;
-}
-.background-balls{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    height:100%;
-    border-style:solid;
-    border-color:yellow;
-    flex:50%;
-   
-    animation:spin 20s linear infinite;
-    div{
-       
-        border-radius:100%;
-        background-color:$Cetacean-Blue-two;
-    }
-    :first-child{
-        animation:pulse 10s linear infinite;
-        position:relative;
-        top:-7em;
-        left:-1em;    
-        height:5em;
-        width:5em;
-    }
-    :nth-child(2){
-      
-        height:8em;
-        width:8em;
-    }
+.page {
+  position: absolute;
+  left: 6em;
+  display: flex;
+  height: 90vh;
+  width: 85vw;
+  margin: 1%;
+  border-style: dotted;
+  border-color: peru;
+  overflow:hidden;
 }

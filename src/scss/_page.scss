@@ -1,11 +1,17 @@
 .page {
-  position: absolute;
-  left: 6em;
+  @media (max-width: 500px) {
+    left:20%;
+    width:79%;
+  }
+  position:relative;
+  left:10%;
   display: flex;
-  height: 90vh;
+  height:95vh;
   width: 85vw;
-  margin: 1%;
   border-style: dotted;
   border-color: peru;
   overflow:hidden;
+  @media (max-width: 500px) {
+  
+  }
 }

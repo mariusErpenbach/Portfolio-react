@@ -1,8 +1,11 @@
 #navBar{
+    @media (max-width: 500px) {
+        width:15%;
+      }
     position:absolute;
     top:4%;
     height:88vh;
-    width:6vw;
+    width:9vw;
     border-style:dotted;
     border-color:yellow;
     background-color:$Dark-Slate-Blue;

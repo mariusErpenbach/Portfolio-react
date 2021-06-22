@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react';
 import Welcome from "./components/Welcome"
 import Blog from "./components/Blog"
 import Aboutme from "./components/Aboutme"
@@ -9,7 +9,9 @@ import Social from "./components/Social"
 import BackgroundBalls from "./components/backgrounds/Background-balls"
 
 function App() {
+
   return (
+
     <React.Fragment>
       <BackgroundBalls/>
       <NavBar/>

@@ -5,7 +5,7 @@ const SideButtonLeft = () => {
     return (
       
       <div id="SideButtonLeft">
-        left
+        <i class="fas fa-arrow-circle-up"></i>
          
       </div>
       

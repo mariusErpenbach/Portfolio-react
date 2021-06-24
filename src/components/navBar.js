@@ -9,14 +9,14 @@ const NavBar = () => {
       <div id="navBar"> 
        <img src={logo} alt="Logo"/>
        <div id="navigateButtons">
-       <SideButtonDown/>
-       <SideButtonLeft/>
-       <SideButtonRight/>
        <SideButtonUp/>
+       <SideButtonRight/>
+       <SideButtonLeft/>
+       <SideButtonDown/>
        </div>
       </div>
     );
   };
-  
+  setInterval(NavBar, 1000);
 export default NavBar;
   

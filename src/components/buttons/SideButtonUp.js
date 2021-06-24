@@ -6,7 +6,7 @@ const SideButtonUp = () => {
       
       <div id="SideButtonUp">
          
-         up
+         <i class="fas fa-arrow-circle-up"></i>
       </div>
       
     );

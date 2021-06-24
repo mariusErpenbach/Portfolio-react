@@ -1,10 +1,9 @@
+import React from 'react';
 const SideButtonDown = () => {
-
-
-  
     return (
       
-      <div id="SideButtonDown">
+      <div id="SideButtonDown" 
+      onClick="pageCounterDecrease()">
         <div>
       
       </div>

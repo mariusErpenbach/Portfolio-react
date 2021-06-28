@@ -1,11 +1,9 @@
 import React from 'react';
-const SideButtonDown = () => {
+const SideButton = () => {
     return (
       
-      <div id="SideButtonDown" 
-      onClick="pageCounterDecrease()">
+      <div id="SideButton">
         <div>
-      
       </div>
          <i class="fas fa-arrow-circle-up"></i>
       </div>
@@ -14,4 +12,4 @@ const SideButtonDown = () => {
 
   };
 
-export default SideButtonDown;
+export default SideButton;

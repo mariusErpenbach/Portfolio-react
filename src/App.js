@@ -8,25 +8,23 @@ import {
 import Welcome from "./components/Welcome"
 import Blog from "./components/Blog"
 import Aboutme from "./components/Aboutme"
-
 import NavBar from "./components/NavBar"
-
 
 import BackgroundBalls from "./components/backgrounds/Background-balls"
 
 function App() {
 
-
   return (
 
     <React.Fragment>
       <BackgroundBalls/>
-      <NavBar/>
+      
       <Router>
       <div>  
-        {/* A <Switch> looks through its children <Route>s and
+      <NavBar/>
+     {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-        <Switch>
+            <Switch>
           <Route path="/aboutme">
             <Aboutme />
           </Route>

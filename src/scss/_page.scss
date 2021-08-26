@@ -11,7 +11,14 @@
   border-style: dotted;
   border-color: peru;
   overflow:hidden;
-  @media (max-width: 500px) {
-  
-  }
+  animation-name: example;
+  animation-duration: 1.5s;
+  // @media (max-width: 500px) {
+ 
+  // }
+}
+@keyframes example {
+  0%   {left:-10%}
+
+  100% {left:10%}
 }

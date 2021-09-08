@@ -8,7 +8,6 @@ import Welcome from "./components/Welcome"
 import Blog from "./components/Blog"
 import Aboutme from "./components/Aboutme"
 import NavBar from "./components/NavBar"
-
 import BackgroundBalls from "./components/backgrounds/Background-balls"
 
 function App() {

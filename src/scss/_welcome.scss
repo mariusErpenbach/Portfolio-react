@@ -7,7 +7,7 @@
         justify-content:center;
         color:white;
         height:5vh;
-        background-color:yellowgreen;
+      
     }
    
 }
@@ -27,7 +27,7 @@
         border-style:solid;
         border-radius:100%;
         border-color:white;
- 
+        z-index: 2;
         .planet-line{
             display:flex;
             position:relative;
@@ -38,30 +38,35 @@
             border-width:0px 2.2px 0px 0px;
             border-radius:100%;
             transition: 0.6s ease-in-out;
-            .planet-line-dot{
-                width:1em;
-                height:1em;
-                border-style:solid;
-                border-color:white;
+            .fa-child{
+                width:0.5em;
                 border-radius:100%;
+                border-width:1px;
                 align-self: flex-end;
                 position:relative;
                 left:15px;
+                top:3em;
+                opacity:100%;
+                transition:0.5s;
+               
             }
+
         }
         
     }
     :first-child{ //myself 
         .planet-line{
             transform:rotate(-20deg);
-         
-            right:-60%;
+            right:-40%;
         }
         height:4em;
         width:4em;
         
     }
     :nth-child(2){
+        .planet-line{
+            transform:rotate(-10deg)
+        }
         height:5em;
         width:5em;
     }
@@ -70,35 +75,37 @@
         width:3.5em;
     }
     :nth-child(4){
+        .planet-line{
+            transform:rotate(10deg);
+        }
         height:4.3em;
         width:4.3em;
     }
     :nth-child(5){
+        .planet-line{
+            transform:rotate(15deg);
+        }
         height:4em;
         width:4em;
     }
     :hover{
         .planet-line{
         height:30vh;
-    }} 
+        .fa-child{
+            opacity:100;  
+          }
+        }
+        } 
 }
 
 #myself-preview{
-    opacity:0;
+   color:white;
     margin-top:20vh;
-    height:30vh;
+    height:45vh;
     width:80vw;
     border-style:dotted;
     border-color:white;
     #me-planet:hover{
         opacity:100;
-    }
-}
-#me-planet{
-   
-        div:hover{
-            #myself-preview{
-                opacity:100;
-            }
     }
 }

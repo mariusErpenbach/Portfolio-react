@@ -1,22 +1,21 @@
-import React from "react";
-
+import React ,{useState} from "react";
+import PlanetData from "../planets.json"
+import Planets from "./welcome/Planets"
 const Welcome = () => {
+const [planet, setPlanet] = useState(PlanetData);
+const [preview,setPreview] = useState("");
+
+
 
   const handleClick= (e) =>{
-    console.log(e.target.id)
+  setPreview(e.target.id)
   }
+  
     return (
       <div className="page" id="welcome-page">
         <p id="welcome-message"> My own little space</p>
-        <div className="my-space"> 
-        <div className="planets" id="me-planet" onClick={handleClick}>
-        <div className="planet-line"><div className="planet-line-dot"></div></div></div>
-        <div className="planets"><div className="planet-line"><div className="planet-line-dot"></div></div></div>
-        <div className="planets"><div className="planet-line"><div className="planet-line-dot"></div></div></div>
-        <div className="planets"><div className="planet-line"><div className="planet-line-dot"></div></div></div>
-        <div className="planets"><div className="planet-line"><div className="planet-line-dot"></div></div></div>
-        </div>
-        <div id="myself-preview"></div>
+        <Planets planet={planet} onClick={handleClick}/>
+        
       </div>
     );
   };

@@ -1,9 +1,10 @@
-import React from React;
+import React from "react";
 
 
-const Preview = ({preview}) =>{
-return (<div>
-    {preview}
+const Preview = ({show}) =>{
+
+return (<div id="preview-box">
+{show}
 </div>)
 }
 

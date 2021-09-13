@@ -1,18 +1,19 @@
 import React,{useState} from "react"
 
-const Planets = ({planet})=>{
+const Planets = (props)=>{
 
-const [preview,setPreview] = useState("");
   const handleClick= (e) =>{
-    document.getElementById("preview-box")
-    setPreview(e.target.id)
+    let test12= (e.target.id)
+    console.log(test12)
+    document.getElementById("preview-box").innerHTML= test12
+    } 
 
-    }
-    const items = planet.map((item, i) => ( 
-        <div className="planets" id={planet.id}  onClick={handleClick}>
+      const items = props.planet.map((item, i) => ( 
+        <div className="planets" id={item.id} onClick={handleClick}>
         <div className="planet-line"><i className="fas fa-child"></i></div></div>
       ));
         
+
       return(
           <div className="my-space">
           {items}

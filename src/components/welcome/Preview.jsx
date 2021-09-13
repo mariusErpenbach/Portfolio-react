@@ -1,10 +1,10 @@
 import React from "react";
 
 
-const Preview = ({show}) =>{
+const Preview = (props) =>{
 
 return (<div id="preview-box">
-{show}
+
 </div>)
 }
 

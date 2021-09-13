@@ -27,7 +27,7 @@
         border-style:solid;
         border-radius:100%;
         border-color:white;
-        z-index: 2;
+       
         .planet-line{
             display:flex;
             position:relative;
@@ -38,6 +38,7 @@
             border-width:0px 2.2px 0px 0px;
             border-radius:100%;
             transition: 0.6s ease-in-out;
+            pointer-events: none;
             .fa-child{
                 width:0.5em;
                 border-radius:100%;
@@ -98,7 +99,7 @@
         } 
 }
 
-#myself-preview{
+#preview-box{
    color:white;
     margin-top:20vh;
     height:45vh;

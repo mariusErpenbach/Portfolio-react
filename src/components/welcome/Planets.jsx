@@ -1,11 +1,26 @@
-import React,{useState} from "react"
+import React from "react"
 
 const Planets = (props)=>{
 
+  const resetHighlights = (planetsToCheck) =>{
+    
+    for (let i=0;i<planetsToCheck.length;i++){
+      if(planetsToCheck[i].style.borderColor==="black"){
+       planetsToCheck[i].style.borderColor=""; 
+      }
+    }
+  }
+
   const handleClick= (e) =>{
-    let test12= (e.target.id)
-    console.log(test12)
-    document.getElementById("preview-box").innerHTML= test12
+    e.preventDefault();
+   // change style of clicked planet to hightlight that it was clicked.
+   let clickedElement = document.getElementById(e.target.id)
+   // first check if other planets are highlighted already 
+   let allPlanets = document.getElementsByClassName(e.target.className)
+   resetHighlights(allPlanets)
+
+   clickedElement.style.borderColor = "black";
+   
     } 
 
       const items = props.planet.map((item, i) => ( 

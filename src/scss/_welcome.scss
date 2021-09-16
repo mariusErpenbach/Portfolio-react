@@ -19,7 +19,9 @@
     border-style:dotted;
     border-color:yellowgreen;
     align-items: center;
+   
     .planets{
+       
         display:flex;
         justify-content:flex-end;
         margin-right:auto;
@@ -27,7 +29,7 @@
         border-style:solid;
         border-radius:100%;
         border-color:white;
-       
+      
         .planet-line{
             display:flex;
             position:relative;
@@ -39,6 +41,9 @@
             border-radius:100%;
             transition: 0.6s ease-in-out;
             pointer-events: none;
+            @media (max-width: 500px) {
+                visibility: hidden;
+            }
             .fa-child{
                 width:0.5em;
                 border-radius:100%;
@@ -49,11 +54,14 @@
                 top:3em;
                 opacity:100%;
                 transition:0.5s;
-               
+                @media (max-width: 500px) {
+                    visibility: hidden;
+                    transition:0s;
+                }
             }
 
         }
-        
+    
     }
     :first-child{ //myself 
         .planet-line{
@@ -62,18 +70,35 @@
         }
         height:4em;
         width:4em;
-        
+        @media (max-width: 500px) {
+            border-radius:0%;
+            width:20%;
+            height:100%;
+            background-color:lightgreen;
+        }
     }
-    :nth-child(2){
+    :nth-child(2){ 
         .planet-line{
             transform:rotate(-10deg)
         }
         height:5em;
         width:5em;
+        @media (max-width: 500px) {
+            border-radius:0%;
+            width:20%;
+            height:100%;
+            background-color:lightgreen;
+        }
     }
     :nth-child(3){
         height:3.5em;
         width:3.5em;
+        @media (max-width: 500px) {
+            border-radius:0%;
+            width:20%;
+            height:100%;
+            background-color:lightgreen;
+        }
     }
     :nth-child(4){
         .planet-line{
@@ -81,6 +106,12 @@
         }
         height:4.3em;
         width:4.3em;
+        @media (max-width: 500px) {
+            border-radius:0%;
+            width:20%;
+            height:100%;
+            background-color:lightgreen;
+        }
     }
     :nth-child(5){
         .planet-line{
@@ -88,6 +119,12 @@
         }
         height:4em;
         width:4em;
+        @media (max-width: 500px) {
+            border-radius:0%;
+            width:20%;
+            height:100%;
+            background-color:lightgreen;
+        }
     }
     :hover{
         .planet-line{
@@ -101,11 +138,14 @@
 
 #preview-box{
    color:white;
-    margin-top:20vh;
+    margin-top:15vh;
     height:45vh;
     width:80vw;
     border-style:dotted;
     border-color:white;
+    @media (max-width: 500px) {
+        width:75%;
+      }
     #me-planet:hover{
         opacity:100;
     }

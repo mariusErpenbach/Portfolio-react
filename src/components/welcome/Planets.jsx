@@ -14,13 +14,13 @@ const Planets = (props)=>{
   const handleClick= (e) =>{
     e.preventDefault();
    // change style of clicked planet to hightlight that it was clicked.
-   let clickedElement = document.getElementById(e.target.id)
+
    // first check if other planets are highlighted already 
    let allPlanets = document.getElementsByClassName(e.target.className)
    resetHighlights(allPlanets)
-
+   //then change the border-color of the planet we want to highlight 
+   let clickedElement = document.getElementById(e.target.id)
    clickedElement.style.borderColor = "black";
-   
     } 
 
       const items = props.planet.map((item, i) => ( 

@@ -1,4 +1,4 @@
-import React ,{useState, useEffect} from "react";
+import React ,{useState,useEffect} from "react";
 import PlanetData from "../planets.json";
 import Planets from "./welcome/Planets";
 import Preview from "./welcome/Preview";

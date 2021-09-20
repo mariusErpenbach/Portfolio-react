@@ -1,0 +1,23 @@
+[
+    {
+       "id":"me-planet",
+       "background-color":"yellow"
+    },
+    {
+        "id":"philosophy-planet",
+        "background-color":"yellow"
+    },
+    {
+        "id":"sport-planet",
+        "background-color":"yellow"
+    },
+    {
+        "id":"music-planet",
+        "background-color":"yellow"
+    },
+    {
+        "id":"hobby-planet",
+        "background-color":"yellow"
+    }
+
+]

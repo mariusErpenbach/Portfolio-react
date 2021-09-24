@@ -1,0 +1,9 @@
+{
+    "name": "Marius",
+    "lastName" : "Erpenbach",
+    "age": "26",
+    "dateOfBirth":"06.11.1994",
+    "nativeLanguage":"german",
+    "placeOfResidence":"Cologne",
+    "smallIntroduction":"Thank you for visiting my Portfolio website, this is my own little space where I test some coding principles."
+}

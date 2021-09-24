@@ -1,6 +1,6 @@
 [
     {
-       "id":"me-planet"
+       "id":"coding-planet"
     },
     {
         "id":"philosophy-planet"
@@ -12,7 +12,7 @@
         "id":"music-planet"
     },
     {
-        "id":"hobby-planet"
+        "id":"me-planet"
     }
 
 ]

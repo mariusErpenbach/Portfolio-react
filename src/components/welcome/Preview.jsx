@@ -4,6 +4,7 @@ import Coding from "./previews/Coding.jsx";
 import Philosophy from "./previews/Philosophy.jsx";
 import Sport from "./previews/Sport.jsx";
 import Music from "./previews/Music.jsx";
+
 const Preview = (props) =>{
 const [preview, setPreview] = useState("")
 

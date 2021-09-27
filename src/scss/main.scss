@@ -8,6 +8,9 @@
 //components 
 @import "navBar.scss";
 @import "welcome.scss";
+//component-components
+@import "./WelcomeComponents//previews";
+@import "./WelcomeComponents/Previews/characteristics";
 // Buttons
 @import "./buttons/navigationsButtons"
 

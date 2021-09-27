@@ -1,0 +1,54 @@
+#my-characteristics{
+    height:100%;
+    background-color:$Space-Cadet;
+    display:column;
+    flex-direction:row;
+    header{
+        display:flex;
+        justify-content: center;
+        border-style:dotted;
+        border-color:green;
+        @media (max-width: 500px) {
+            font-size:0.4em;
+        }
+    }
+    main{
+        display:flex;
+        flex-direction:column;
+        @media (max-width: 500px) {
+           flex-direction:row;
+          }
+    table{
+      
+        @media (max-width: 500px) {
+            font-size:0.3em;
+           
+          }
+        tr{
+           
+            :first-child{
+                text-align:end;
+                
+            }
+            :nth-child(2){
+                text-align:start;
+            }
+            th{
+            border-color:lightskyblue;
+            border-style:solid;
+                
+                
+            }
+        }
+    }
+    p{
+        font-size:0.3em;
+        background-color:blue;
+        @media (max-width: 500px) {
+            text-align: center;
+            font-size:0.3em;
+            width:45%;
+          }
+    }
+}
+}

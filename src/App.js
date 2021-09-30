@@ -9,7 +9,7 @@ import Blog from "./components/Blog"
 import Aboutme from "./components/Aboutme"
 import NavBar from "./components/NavBar"
 import BackgroundBalls from "./components/backgrounds/Background-balls"
-
+import QuickNavi from './components/navigationBar/QuickNavi';
 function App() {
 
   return (
@@ -18,6 +18,7 @@ function App() {
       <BackgroundBalls/>
       
       <Router>
+      <QuickNavi/>
       <div>  
       <NavBar/>
      {/* A <Switch> looks through its children <Route>s and

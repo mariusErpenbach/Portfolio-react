@@ -30,11 +30,12 @@ const [myCharacter, setMyCharacter] = useState(data);
         <th>Email Address:</th>
         <th>{myCharacter.myEmail}</th>
         </tr>
-        
-      
     </table>
         <p>{myCharacter.smallIntroduction}</p>
         </main>
+        <footer>
+     
+        </footer>
     </div>
 )
 }

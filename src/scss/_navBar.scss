@@ -1,20 +1,122 @@
-.navBar{
-    @media (max-width: 500px) {
-        width:15%;
-      }
-    position:absolute;
-    top:4%;
-    height:88vh;
-    width:9vw;
-   
-    background-color:$Dark-Slate-Blue;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    img{
-        margin:5%;
-        height:auto;
-        width:95%;
+.navBar {
+  @media (max-width: 500px) {
+    width: 15%;
+    height: 100%;
+    margin-top: -5%;
+  }
+  position: absolute;
+  top: 4%;
+  height: 88vh;
+  width: 9vw;
+  background-color: $Dark-Slate-Blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    margin-top:10%;
+    border-style:solid;
+    border-color:grey;
+    width: 70%;
+  }
+  nav {
+    margin-top: auto;
+    width: 80%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    @media (max-width:1142px) {
+        height:20%;
+        width:auto;
+        font-size:80%;
     }
-    
+    @media (max-width:500px) {
+        height:40%;
+    }
+  }
+}
+// NavBar Buttons
+.social-button {
+  margin-top: 4%;
+  display: flex;
+  width: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  overflow: hidden;
+  @media (max-width:1142px) {
+
+  }
+  @media (max-width:500px) {
+    border-style:none;
+}
+  i {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    font-size: 3em;
+    @media (max-width: 1142px) {
+      width: 100%;
+      font-size:2em;
+    }
+    @media (max-width:500px) {
+        font-size:2em;
+    }
+  }
+  aside {
+    display: flex;
+    align-items: center;
+    font-size: 1.7em;
+    width: 60%;
+    border-style: solid;
+    border-width: 0px 0px 0px 1px;
+    @media (max-width: 1280px) {
+      border-style: none;
+    }
+    @media (max-width: 1142px) {
+      display: none;
+    }
+    p {
+      font-size: 0.5em;
+      margin-left: 10%;
+      @media (max-width: 1142px) {
+        display: none;
+      }
+    }
+  }
+}
+
+#linkedInBox {
+  background-color: #1d2226;
+  color: white;
+  p {
+    color: White;
+  }
+}
+
+#facebookBox {
+  color: #0673e7;
+  background-color: white;
+  p {
+    color: black;
+  }
+  aside {
+    border-color: black;
+  }
+}
+
+#instagramBox {
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  
+  p {
+    color: white;
+  }
 }

@@ -4,6 +4,7 @@
     display:column;
     flex-direction:row;
     header{
+        font-size:2em;
         display:flex;
         justify-content: center;
         border-style:dotted;
@@ -15,25 +16,30 @@
     main{
         display:flex;
         flex-direction:column;
+        align-items:center;
         @media (max-width: 500px) {
            flex-direction:row;
           }
     table{
-      
+        font-size:1.6em;
+        margin-top:1%;
+        width:auto;
         @media (max-width: 500px) {
             font-size:0.3em;
            
           }
         tr{
-           
+        
             :first-child{
                 text-align:end;
-                
+                position:relative;
+                right:0.25%;
             }
             :nth-child(2){
                 text-align:start;
             }
             th{
+                
             border-color:lightskyblue;
             border-style:solid;
                 
@@ -42,8 +48,16 @@
         }
     }
     p{
-        font-size:0.3em;
-        background-color:blue;
+border-style:solid;
+border-width:1px;
+background-color:$Cetacean-Blue-two;
+border-color:$Maximum-Purple;
+        font-size:1.5em;
+        display:flex;
+        text-align: center;
+        align-items:center;
+        height:4em;
+        width:45%;
         @media (max-width: 500px) {
             text-align: center;
             font-size:0.3em;

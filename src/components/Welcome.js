@@ -1,5 +1,5 @@
 import React ,{useState} from "react";
-import PlanetData from "../components/welcome/planets.json";
+import PlanetData from "./Planets.json";
 import Planets from "./welcome/Planets";
 
 
@@ -8,7 +8,7 @@ const [planet, setPlanet] = useState(PlanetData);
     return (
       <div className="page" id="welcome-page">
       <p id="welcome-message"> My own little space</p>
-      <Planets planet={planet}/>  
+      <Planets planet={planet}/>
       </div>
       
     );

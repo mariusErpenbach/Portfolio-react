@@ -3,16 +3,7 @@
     background-color:$Space-Cadet;
     display:column;
     flex-direction:row;
-    header{
-        font-size:2em;
-        display:flex;
-        justify-content: center;
-        border-style:dotted;
-        border-color:green;
-        @media (max-width: 500px) {
-            font-size:0.4em;
-        }
-    }
+    
     main{
         display:flex;
         flex-direction:column;
@@ -20,16 +11,55 @@
         @media (max-width: 500px) {
            flex-direction:row;
           }
+          
+          p{
+           
+            background-color:$Cetacean-Blue-two;
+            border-color:$Maximum-Purple;
+            margin-top:0.5%;
+            margin-right:auto;
+                    font-size:1.5em;
+                    display:flex;
+                    text-align: center;
+                    align-items:center;
+                    height:4em;
+                    width:45%;
+                    margin:1%;
+                    @media (max-width: 500px) {
+                        text-align: center;
+                        font-size:0.3em;
+                        width:45%;
+                      }
+                }
+
+          header{
+            width:40%;
+            height:20%;
+            margin-top:1%;
+            background-color:rgb(45, 49, 90);
+            font-size:1.4em;
+            display:flex;
+            justify-content: center;
+            @media (max-width: 500px) {
+                font-size:0.4em;
+            }
+            p{
+                height:20%;
+                width:85%;
+                justify-content: center;
+            }
+        }
     table{
-        font-size:1.6em;
-        margin-top:1%;
-        width:auto;
+        font-size:1.4em;
+        margin-top:1.5%;
+        width:45%;
+        
         @media (max-width: 500px) {
             font-size:0.3em;
            
           }
         tr{
-        
+           
             :first-child{
                 text-align:end;
                 position:relative;
@@ -39,30 +69,51 @@
                 text-align:start;
             }
             th{
-                
-            border-color:lightskyblue;
+            
+            padding:2%;
             border-style:solid;
-                
+            border-width:1px 0px 1px 0px;
+          
                 
             }
         }
     }
-    p{
-border-style:solid;
-border-width:1px;
-background-color:$Cetacean-Blue-two;
-border-color:$Maximum-Purple;
-        font-size:1.5em;
+    
+    
+}
+footer{
+    display:flex;
+    justify-content:center;
+    position:relative;
+    margin-top:1%;
+    width:100%;
+    height:auto;
+  
+    #about-me-adviser{
+        padding:1%;
+        margin-right:1%;
+        margin-left:auto;
+
         display:flex;
+        border-style:none;
+        flex-direction: column;
+        text-align:start;
+        height:auto;
+        width:42%;
         text-align: center;
-        align-items:center;
-        height:4em;
-        width:45%;
-        @media (max-width: 500px) {
-            text-align: center;
-            font-size:0.3em;
-            width:45%;
-          }
+        a{
+            position:relative;
+            left:30%;
+            margin-top:1%;
+            width:20%;
+            border-style:solid;
+            border-width:1px;
+            color:white;
+            text-decoration: none;
+            i{
+                font-size:0.8em;
+            }
+        }
     }
 }
 }

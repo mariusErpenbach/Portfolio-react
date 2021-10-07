@@ -7,8 +7,10 @@ const [myCharacter, setMyCharacter] = useState(data);
 
     return (
     <div id="my-characteristics"> 
-    <header>Developers Characteristics </header>
+    
     <main>
+    
+    <header><p>Developers Characteristics</p> </header>
     <table>
         <tr>
         <th>Name:</th>
@@ -31,11 +33,14 @@ const [myCharacter, setMyCharacter] = useState(data);
         <th>{myCharacter.myEmail}</th>
         </tr>
     </table>
-        <p>{myCharacter.smallIntroduction}</p>
-        </main>
-        <footer>
      
+        <footer>
+       
+        <p id="about-me-adviser"> Read more about me, I wrote a small Introduction about who I am. <a href="./">read more <i class="fas fa-arrow-circle-right"></i></a></p>
+        
         </footer>
+        </main>
+       
     </div>
 )
 }

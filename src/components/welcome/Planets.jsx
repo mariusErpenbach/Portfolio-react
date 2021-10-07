@@ -17,7 +17,6 @@ const [previewShow, setPreviewShow] = useState("blanket")
   const handleClick= (e) =>{
     e.preventDefault();
    // change style of clicked planet to hightlight that it was clicked.
-
    // first check if other planets are highlighted already 
    let allPlanets = document.getElementsByClassName(e.target.className)
    resetHighlights(allPlanets)
